@@ -8,13 +8,6 @@ let msg = document.querySelector("#msg");
 let turnO = true;
 let count= 0; //to check for draw condition
 
-//2d arrays-
-// let arr2= [
-//     ["apple", "litchi"],
-//     ["potato", "mushroom"],
-//     ["pants", "shirts"]
-// ];
-
 const winPatterns= [
 	[0, 1, 2],
 	[0, 3, 6],
@@ -91,21 +84,13 @@ const showWinner = (winner, pattern) => {
 
 const checkWinner = ( ) => {
 	for(let pattern of winPatterns) {
-// 	console.log(pattern[0], pattern[1], pattern[2]);
-// 	// console.log(boxes[pattern[0]], boxes[pattern[1]], boxes[pattern[2]]);
-// 	console.log(
-// 		boxes[pattern[0]].innerText, 
-// 		boxes[pattern[1]].innerText,
-//  		boxes[pattern[2]].innerText
-// );
+
 	let pos1val = boxes[pattern[0]].innerText;
 	let pos2val = boxes[pattern[1]].innerText;
 	let pos3val = boxes[pattern[2]].innerText;
 
 	if(pos1val != "" && pos2val != "" && pos3val != "") {
 		if(pos1val === pos2val && pos2val === pos3val) {
-				// console.log("winner");
-				// console.log("winner", pos1val);
 				showWinner(pos1val, pattern);
 				return true;
 	  		}
