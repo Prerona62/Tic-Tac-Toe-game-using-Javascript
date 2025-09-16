@@ -82,6 +82,7 @@ h1{
 }
 
 .winning-box {
-  background-color: #DCB8CB; /* light highlight */
-  border: 2px solid #ff006e; /* bold border */
+  background-color: #DCB8CB; 
+  border: 2px solid #ff006e; 
+
 }
